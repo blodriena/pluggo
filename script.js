@@ -32,18 +32,19 @@ window.addEventListener("scroll", () => {
 });
 
 
+const cards = document.querySelectorAll('.faq-card');
 
+cards.forEach(card => {
+  card.addEventListener('click', () => {
+    // Check if the card you clicked is already open
+    const isOpen = card.classList.contains('active');
 
-const faqItems = document.querySelectorAll('.faq-item');
+    // Close ALL cards first (Professional behavior)
+    cards.forEach(c => c.classList.remove('active'));
 
-faqItems.forEach(item => {
-    item.addEventListener('click', () => {
-        const isOpen = item.classList.contains('active');
-        
-        faqItems.forEach(i => i.classList.remove('active'));
-        
-        if (!isOpen) {
-            item.classList.add('active');
-        }
-    });
+    // If it wasn't open, open it now
+    if (!isOpen) {
+      card.classList.add('active');
+    }
+  });
 });
