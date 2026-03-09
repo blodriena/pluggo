@@ -474,14 +474,6 @@ body {
   max-width: 450px;
 }
 
-@media (max-width: 900px) {
-  .how .cards {
-    grid-template-columns: 1fr;
-  }
-  .how .cards .card.card--full {
-    grid-column: span 1;
-  }
-}
 .container {
   max-width: 1200px;
   margin: 0 auto;

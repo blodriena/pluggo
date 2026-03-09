@@ -196,9 +196,3 @@ body {
   }
 }
 
-@media (max-width: 900px) {
-  .how .cards {
-    grid-template-columns: 1fr;
-    .card.card--full { grid-column: span 1; }
-  }
-}
