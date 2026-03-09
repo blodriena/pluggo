@@ -1,0 +1,107 @@
+$lime: #e2ff31; 
+$gold-gradient: linear-gradient(to right, #ffffff 10%, #d5b996 100%);
+
+.digital-products {
+  padding: 120px 0;
+  background-color: #000;
+
+  .product-card {
+    display: flex;
+    align-items: center; 
+    justify-content: space-between;
+    
+    background: transparent; 
+    border: none; 
+    padding: 0;
+    
+    gap: 100px; 
+    max-width: 1200px;
+    margin: 0 auto;
+
+    .card-visual {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+
+      img {
+        width: 100%;
+        max-width: 510px;
+        border-radius: 40px; 
+      }
+    }
+
+    .card-text {
+      flex: 1;
+
+      h1 {
+        font-size: 56px; 
+        line-height: 1.1;
+        margin-bottom: 25px;
+        background: $gold-gradient;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+
+      p {
+        color: #a0a0a0;
+        font-size: 18px;
+        line-height: 1.6;
+        margin-bottom: 40px;
+        max-width: 480px;
+      }
+
+    }
+  }
+}
+$lime: #e2ff31;
+
+$lime: #e2ff31;
+
+.btn-primary {
+  background-color: $lime;
+  color: #000;
+  border: none;
+  border-radius: 40px; 
+  font-weight: 700;
+  font-size: 16px;      
+  cursor: pointer;
+  
+  height: 46px;         
+  width: 140px;         
+  padding: 0;
+  overflow: hidden; 
+  position: relative;
+  perspective: 500px; 
+
+  .btn-text-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 0.4s cubic-bezier(0.19, 1, 0.22, 1); 
+    
+    span {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      backface-visibility: hidden; 
+    }
+    
+    span:nth-child(1) {
+      transform: rotateX(0deg) translateZ(22px); 
+    }
+    
+    span:nth-child(2) {
+      transform: rotateX(-90deg) translateZ(22px);
+    }
+  }
+
+  &:hover .btn-text-wrapper {
+    transform: rotateX(90deg); 
+  }
+}

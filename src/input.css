@@ -546,4 +546,91 @@ body {
   border-radius: 50%;
 }
 
+.digital-products {
+  padding: 120px 0;
+  background-color: #000;
+}
+.digital-products .product-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: transparent;
+  border: none;
+  padding: 0;
+  gap: 100px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.digital-products .product-card .card-visual {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+.digital-products .product-card .card-visual img {
+  width: 100%;
+  max-width: 510px;
+  border-radius: 40px;
+}
+.digital-products .product-card .card-text {
+  flex: 1;
+}
+.digital-products .product-card .card-text h1 {
+  font-size: 56px;
+  line-height: 1.1;
+  margin-bottom: 25px;
+  background: linear-gradient(to right, #ffffff 10%, #d5b996 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.digital-products .product-card .card-text p {
+  color: #a0a0a0;
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 40px;
+  max-width: 480px;
+}
+
+.btn-primary {
+  background-color: #e2ff31;
+  color: #000;
+  border: none;
+  border-radius: 40px;
+  font-weight: 700;
+  font-size: 16px;
+  cursor: pointer;
+  height: 46px;
+  width: 140px;
+  padding: 0;
+  overflow: hidden;
+  position: relative;
+  perspective: 500px;
+}
+.btn-primary .btn-text-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 0.4s cubic-bezier(0.19, 1, 0.22, 1);
+}
+.btn-primary .btn-text-wrapper span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backface-visibility: hidden;
+}
+.btn-primary .btn-text-wrapper span:nth-child(1) {
+  transform: rotateX(0deg) translateZ(22px);
+}
+.btn-primary .btn-text-wrapper span:nth-child(2) {
+  transform: rotateX(-90deg) translateZ(22px);
+}
+.btn-primary:hover .btn-text-wrapper {
+  transform: rotateX(90deg);
+}
+
 /*# sourceMappingURL=input.css.map */
