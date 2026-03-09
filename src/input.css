@@ -29,7 +29,6 @@ body {
   justify-content: space-between;
   padding: 1px 24px;
   border-radius: 50px;
-  /* Transparent glass effect */
   background: rgba(20, 20, 20, 0.35);
   backdrop-filter: blur(14px);
   -webkit-backdrop-filter: blur(14px);
