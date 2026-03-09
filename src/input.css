@@ -482,5 +482,68 @@ body {
     grid-column: span 1;
   }
 }
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+.testimonials {
+  padding: 140px 0;
+}
+.testimonials .header {
+  margin-bottom: 80px;
+}
+.testimonials .header h1 {
+  font-size: 56px;
+  line-height: 1.1;
+  background: linear-gradient(to right, #ffffff 10%, #d5b996 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.testimonials .stat-row {
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  gap: 120px 20px;
+  margin-bottom: 120px;
+  align-items: start;
+}
+.testimonials .stat-box h2 {
+  font-size: 63px;
+  margin: 0;
+  letter-spacing: -2px;
+  line-height: 1;
+  background: linear-gradient(to right, #ffffff 10%, #d5b996 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.testimonials .stat-box p {
+  color: #a0a0a0;
+  font-size: 13px;
+  letter-spacing: 2px;
+  font-weight: 600;
+  margin-top: 10px;
+}
+.testimonials .quote-box .quote-text {
+  font-size: 25px;
+  line-height: 1.4;
+  margin: 0 0 30px 0;
+  color: #fff;
+}
+.testimonials .quote-box .user-name {
+  color: #e2ff31;
+  font-size: 17px;
+  margin: 0;
+}
+.testimonials .quote-box .user-info {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.testimonials .quote-box .user-info img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
 
 /*# sourceMappingURL=input.css.map */
