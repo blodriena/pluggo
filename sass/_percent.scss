@@ -1,0 +1,89 @@
+$bg: #070707;
+$text: #ffffff;
+$text-muted: #9ca3af;
+$card-bg: #151515;
+$accent: #6ee7b7;
+
+.features {
+  background: $bg;
+  color: $text;
+  padding: 120px 0;
+
+  .container {
+    width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1.1fr 1fr;
+    gap: 80px;
+    align-items: center;
+  }
+
+  &__tag {
+    background: #12121a;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 13px;
+    letter-spacing: 1px;
+    color: $text-muted;
+    display: inline-block;
+    margin-bottom: 25px;
+  }
+
+  &__title {
+    font-size: 52px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 50px;
+  }
+
+  &__description {
+    color: $text-muted;
+    line-height: 1.6;
+    margin-bottom: 40px;
+    font-size: 16px;
+  }
+
+  &__card {
+    background: $card-bg;
+    border-radius: 22px;
+    padding: 20px;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.4);
+
+    img {
+      width: 100%;
+      border-radius: 14px;
+      display: block;
+    }
+  }
+}
+
+.feature-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 18px;
+  margin-bottom: 20px;
+
+  &__icon {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background: #111;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $accent;
+    font-size: 18px;
+
+  }
+
+  h3 {
+    font-size: 21px;
+    margin-bottom: 6px;
+  }
+
+  p {
+    color: $text-muted;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+}
