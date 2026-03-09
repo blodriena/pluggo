@@ -20,26 +20,20 @@ body{
   display:flex;
   justify-content:center;
   z-index:1000;
-
   background: transparent;
 }
 
 .nav-container{
   width:95%;
   max-width:1200px;
-
   display:flex;
   align-items:center;
   justify-content:space-between;
-
   padding:1px 24px;
   border-radius:50px;
-
   background: rgba(20,20,20,0.35);
-
   backdrop-filter: blur(14px);
   -webkit-backdrop-filter: blur(14px);
-
   border:1px solid rgba(255,255,255,0.15);
 
   box-shadow:
