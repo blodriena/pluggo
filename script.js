@@ -30,3 +30,20 @@ window.addEventListener("scroll", () => {
   });
 
 });
+
+
+
+
+const faqItems = document.querySelectorAll('.faq-item');
+
+faqItems.forEach(item => {
+    item.addEventListener('click', () => {
+        const isOpen = item.classList.contains('active');
+        
+        faqItems.forEach(i => i.classList.remove('active'));
+        
+        if (!isOpen) {
+            item.classList.add('active');
+        }
+    });
+});
