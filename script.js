@@ -36,13 +36,10 @@ const cards = document.querySelectorAll('.faq-card');
 
 cards.forEach(card => {
   card.addEventListener('click', () => {
-    // Check if the card you clicked is already open
     const isOpen = card.classList.contains('active');
 
-    // Close ALL cards first (Professional behavior)
     cards.forEach(c => c.classList.remove('active'));
 
-    // If it wasn't open, open it now
     if (!isOpen) {
       card.classList.add('active');
     }
