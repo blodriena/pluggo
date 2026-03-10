@@ -31,17 +31,21 @@ window.addEventListener("scroll", () => {
 
 });
 
+const triggers = document.querySelectorAll('.faq-trigger');
 
-const cards = document.querySelectorAll('.faq-card');
+triggers.forEach(trigger => {
+  trigger.addEventListener('click', () => {
+    const parent = trigger.parentElement;
+    const isActive = parent.classList.contains('active');
 
-cards.forEach(card => {
-  card.addEventListener('click', () => {
-    const isOpen = card.classList.contains('active');
+    // Close all others first (optional accordion behavior)
+    document.querySelectorAll('.faq-item').forEach(item => {
+      item.classList.remove('active');
+    });
 
-    cards.forEach(c => c.classList.remove('active'));
-
-    if (!isOpen) {
-      card.classList.add('active');
+    // Toggle current
+    if (!isActive) {
+      parent.classList.add('active');
     }
   });
 });
