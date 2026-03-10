@@ -38,12 +38,10 @@ triggers.forEach(trigger => {
     const parent = trigger.parentElement;
     const isActive = parent.classList.contains('active');
 
-    // Close all others first (optional accordion behavior)
     document.querySelectorAll('.faq-item').forEach(item => {
       item.classList.remove('active');
     });
 
-    // Toggle current
     if (!isActive) {
       parent.classList.add('active');
     }
