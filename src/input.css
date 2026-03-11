@@ -2172,4 +2172,26 @@ html {
   scroll-behavior: smooth;
 }
 
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0a0a0a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #1a1a1a, #000);
+  border-radius: 10px;
+  border: 2px solid #0a0a0a;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #333, #111);
+}
+
+::-webkit-scrollbar-corner {
+  background: #0a0a0a;
+}
+
 /*# sourceMappingURL=input.css.map */
