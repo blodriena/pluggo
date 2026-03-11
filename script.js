@@ -47,3 +47,23 @@ triggers.forEach(trigger => {
     }
   });
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+
+const burger = document.querySelector(".burger");
+const closeBtn = document.querySelector(".close");
+const nav = document.querySelector(".nav-container");
+
+if (burger && closeBtn && nav) {
+
+burger.addEventListener("click", () => {
+  nav.classList.add("open");
+});
+
+closeBtn.addEventListener("click", () => {
+  nav.classList.remove("open");
+});
+
+}
+
+});

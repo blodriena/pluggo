@@ -111,3 +111,99 @@ body{
 .auth-btn:hover .text{
   transform:translateY(-40px);
 }
+.burger{
+  display:none;
+  flex-direction:column;
+  gap:6px;
+  cursor:pointer;
+
+  span{
+    width:26px;
+    height:2px;
+    background:white;
+  }
+}
+
+.close{
+  display:none;
+  position:absolute;
+  left:25px;
+  top:25px;
+  font-size:28px;
+  color:white;
+  cursor:pointer;
+}
+
+
+@media (max-width:900px){
+
+  /* center navbar container */
+  .navbar{
+    padding:10px;
+  }
+
+  .nav-container{
+    width:92%;
+    margin:0 auto;
+    padding:12px 18px;
+    justify-content:space-between;
+  }
+
+  .logo a{
+    margin-left:0;
+  }
+
+  .logo img{
+    margin-left:0;
+    height:44px;
+  }
+
+  .nav-links,
+  .auth{
+    display:none;
+  }
+
+  .burger{
+    display:flex;
+  }
+
+  .nav-container.open{
+    flex-direction:column;
+    align-items:center;
+    gap:25px;
+    padding:25px 20px;
+  }
+
+  .nav-container.open .nav-links{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:18px;
+    width:100%;
+  }
+
+  .nav-container.open .nav-links li{
+    width:100%;
+    text-align:center;
+  }
+
+  .nav-container.open .auth{
+    display:none
+  }
+
+  .close{
+    display:none;
+  }
+
+  .nav-container.open .close{
+    display:block;
+    position:absolute;
+    top:15px;
+    left:20px;
+  }
+
+  .nav-container.open .burger{
+    display:none;
+  }
+
+}

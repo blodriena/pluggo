@@ -73,3 +73,83 @@
   opacity:0.2;
   pointer-events:none;
 }
+
+/* Prevent horizontal scroll */
+body{
+  overflow-x:hidden;
+}
+
+.hero{
+  overflow-x:hidden;
+}
+
+/* ===== TABLET ===== */
+@media (max-width:1024px){
+
+  .hero h1{
+    font-size:56px;
+  }
+
+  .hero p{
+    font-size:17px;
+  }
+
+  .email-box{
+    max-width:480px;
+  }
+
+}
+
+
+/* ===== MOBILE ===== */
+@media (max-width:768px){
+
+  .hero{
+    padding:80px 20px;
+  }
+
+  .badge{
+    font-size:13px;
+    padding:8px 16px;
+  }
+
+  .hero h1{
+    font-size:38px;
+    line-height:1.2;
+  }
+
+  .hero p{
+    font-size:15px;
+    margin-bottom:28px;
+  }
+
+  .email-box{
+    max-width:100%;
+    padding:6px;
+  }
+
+  .email-box input{
+    padding:12px 14px;
+    font-size:14px;
+  }
+
+  .signup-btn{
+    padding:12px 20px;
+    font-size:14px;
+  }
+
+}
+
+
+/* ===== SMALL PHONES ===== */
+@media (max-width:480px){
+
+  .hero h1{
+    font-size:32px;
+  }
+
+  .email-box{
+    border-radius:30px;
+  }
+
+}
