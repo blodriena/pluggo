@@ -75,3 +75,93 @@ $gold-gradient: linear-gradient(to right, #ffffff 10%, #d5b996 100%);
     }
   }
 }
+
+@media (max-width: 1024px) {
+
+  .container {
+    padding: 0 24px;
+  }
+
+  .testimonials {
+
+    padding: 100px 0;
+
+    .header h1 {
+      font-size: 42px;
+    }
+
+    .stat-row {
+      grid-template-columns: 200px 1fr; 
+      gap: 60px 20px; 
+      margin-bottom: 80px;
+    }
+
+    .stat-box h2 {
+      font-size: 48px;
+    }
+
+    .quote-box .quote-text {
+      font-size: 22px;
+    }
+
+    .quote-box .user-info img {
+      width: 45px;
+      height: 45px;
+    }
+  }
+}
+
+
+@media (max-width: 768px) {
+
+  .container {
+    padding: 0 18px;
+  }
+
+  .testimonials {
+
+    padding: 80px 0;
+
+    .header h1 {
+      font-size: 32px;
+      text-align: center;
+    }
+
+    .stat-row {
+      grid-template-columns: 1fr; 
+      gap: 30px;
+      margin-bottom: 60px;
+    }
+
+    .stat-box {
+      text-align: center;
+
+      h2 {
+        font-size: 36px;
+      }
+
+      p {
+        font-size: 11px;
+      }
+    }
+
+    .quote-box {
+
+      .quote-text {
+        font-size: 18px;
+        text-align: center;
+      }
+
+      .user-info {
+        flex-direction: column;
+        text-align: center;
+        gap: 12px;
+
+        img {
+          width: 40px;
+          height: 40px;
+        }
+      }
+    }
+  }
+}

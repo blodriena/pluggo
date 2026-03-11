@@ -365,6 +365,54 @@ body {
   filter: blur(60px);
 }
 
+@media (max-width: 1024px) {
+  .dashboard-preview {
+    padding: 100px 20px;
+  }
+  .dashboard-frame {
+    width: 90%;
+    height: 460px;
+  }
+  .dashboard-frame img {
+    transform: translateY(25px);
+  }
+  .dashboard-preview::before {
+    width: 700px;
+    height: 260px;
+  }
+}
+@media (max-width: 768px) {
+  .dashboard-preview {
+    padding: 70px 16px;
+    margin-top: -40px;
+  }
+  .dashboard-frame {
+    width: 100%;
+    height: 360px;
+    border-radius: 22px;
+  }
+  .dashboard-frame img {
+    transform: translateY(5px);
+  }
+  .dashboard-preview::before {
+    width: 500px;
+    height: 200px;
+    filter: blur(50px);
+  }
+}
+@media (max-width: 480px) {
+  .dashboard-preview {
+    padding: 60px 14px;
+    margin-top: -50px;
+  }
+  .dashboard-frame {
+    height: 300px;
+    padding: 8px;
+  }
+  .dashboard-frame img {
+    transform: translateY(0px);
+  }
+}
 .features {
   background: #070707;
   color: #ffffff;
@@ -439,6 +487,126 @@ body {
   line-height: 1.5;
 }
 
+@media (max-width: 1024px) {
+  .features .container {
+    grid-template-columns: 1fr;
+    gap: 50px;
+    width: 90%;
+    margin: auto;
+  }
+  .features__title {
+    font-size: 42px;
+  }
+  .features__description {
+    font-size: 15px;
+  }
+  .features__card img {
+    width: 100%;
+    height: auto;
+  }
+  .feature-item {
+    gap: 14px;
+  }
+  .feature-item__icon {
+    width: 36px;
+    height: 36px;
+    font-size: 16px;
+  }
+  .feature-item h3 {
+    font-size: 19px;
+  }
+  .feature-item p {
+    font-size: 15px;
+  }
+}
+@media (max-width: 768px) {
+  .features {
+    padding-top: 10px;
+    padding-bottom: 60px;
+    margin-top: 0;
+  }
+}
+.features .container {
+  grid-template-columns: 1fr;
+  gap: 30px;
+  width: 95%;
+  margin: auto;
+}
+
+.features__title {
+  font-size: 32px;
+  margin-bottom: 25px;
+}
+
+.features__description {
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.features__card {
+  padding: 15px;
+  margin-right: 40px;
+}
+.features__card img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
+
+.feature-item {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+}
+.feature-item__icon {
+  width: 32px;
+  height: 32px;
+  font-size: 14px;
+}
+.feature-item h3 {
+  font-size: 17px;
+}
+.feature-item p {
+  font-size: 14px;
+}
+
+@media (max-width: 480px) {
+  .features {
+    padding: 60px 10px;
+  }
+  .features__title {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+  .features__description {
+    font-size: 13px;
+    margin-bottom: 15px;
+  }
+  .features .container {
+    width: 100%;
+    gap: 30px;
+  }
+  .features__card {
+    padding: 12px;
+  }
+  .features__card img {
+    border-radius: 10px;
+  }
+  .feature-item {
+    gap: 10px;
+  }
+  .feature-item__icon {
+    width: 28px;
+    height: 28px;
+    font-size: 13px;
+  }
+  .feature-item h3 {
+    font-size: 16px;
+  }
+  .feature-item p {
+    font-size: 13px;
+  }
+}
 body {
   font-family: "Inter", sans-serif;
   margin: 0;
@@ -673,6 +841,71 @@ body {
   border-radius: 50%;
 }
 
+@media (max-width: 1024px) {
+  .container {
+    padding: 0 24px;
+  }
+  .testimonials {
+    padding: 100px 0;
+  }
+  .testimonials .header h1 {
+    font-size: 42px;
+  }
+  .testimonials .stat-row {
+    grid-template-columns: 200px 1fr;
+    gap: 60px 20px;
+    margin-bottom: 80px;
+  }
+  .testimonials .stat-box h2 {
+    font-size: 48px;
+  }
+  .testimonials .quote-box .quote-text {
+    font-size: 22px;
+  }
+  .testimonials .quote-box .user-info img {
+    width: 45px;
+    height: 45px;
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    padding: 0 18px;
+  }
+  .testimonials {
+    padding: 80px 0;
+  }
+  .testimonials .header h1 {
+    font-size: 32px;
+    text-align: center;
+  }
+  .testimonials .stat-row {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    margin-bottom: 60px;
+  }
+  .testimonials .stat-box {
+    text-align: center;
+  }
+  .testimonials .stat-box h2 {
+    font-size: 36px;
+  }
+  .testimonials .stat-box p {
+    font-size: 11px;
+  }
+  .testimonials .quote-box .quote-text {
+    font-size: 18px;
+    text-align: center;
+  }
+  .testimonials .quote-box .user-info {
+    flex-direction: column;
+    text-align: center;
+    gap: 12px;
+  }
+  .testimonials .quote-box .user-info img {
+    width: 40px;
+    height: 40px;
+  }
+}
 .digital-products {
   padding: 120px 0;
   background-color: #000;
