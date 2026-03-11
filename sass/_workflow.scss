@@ -196,3 +196,139 @@ body {
   }
 }
 
+@media (max-width: 1024px) {
+
+  .how {
+    padding: 80px 24px;
+  }
+
+  .how .header {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .how .header h1 {
+    font-size: 46px;
+  }
+
+  .how .header p {
+    max-width: 600px;
+    font-size: 17px;
+  }
+
+  .how .cards {
+    grid-template-columns: 1fr;
+    gap: 24px;
+    margin-bottom: -120px;
+  }
+
+  .how .card {
+    height: 420px;
+  }
+
+  .how .card.card--full {
+    grid-column: span 1;
+    height: 460px;
+  }
+
+  .how .card .card-content {
+    padding: 32px;
+  }
+
+  .how .card .card-content h3 {
+    font-size: 28px;
+  }
+
+  .how .card .card-content p {
+    font-size: 15px;
+    max-width: 420px;
+  }
+
+}
+@media (max-width: 768px) {
+
+  .how {
+    padding: 70px 18px;
+  }
+
+  .how .subtitle {
+    font-size: 12px;
+  }
+
+  .how .header h1 {
+    font-size: 34px;
+    line-height: 1.2;
+  }
+
+  .how .header p {
+    font-size: 15px;
+  }
+
+  .how .cards {
+    grid-template-columns: 1fr;
+    gap: 18px;
+    margin-bottom: -80px;
+  }
+
+  .how .card {
+    height: auto;
+    min-height: 340px;
+    border-radius: 24px;
+  }
+
+  .how .card.card--full {
+    grid-column: span 1;
+    min-height: 360px;
+  }
+
+  .how .card .img-container img {
+    object-position: center;
+  }
+
+  .how .card .card-content {
+    padding: 24px;
+  }
+
+  .how .card .card-content h3 {
+    font-size: 24px;
+  }
+
+  .how .card .card-content p {
+    font-size: 14px;
+    max-width: 100%;
+  }
+
+  .how .card .img-container .badge {
+    top: 18px;
+    left: 18px;
+    font-size: 12px;
+  }
+
+  .how .card .img-container .badge span {
+    font-size: 28px;
+  }
+
+}
+@media (max-width: 480px) {
+
+  .how {
+    padding: 60px 16px;
+  }
+
+  .how .header h1 {
+    font-size: 28px;
+  }
+
+  .how .card {
+    min-height: 300px;
+  }
+
+  .how .card .card-content {
+    padding: 20px;
+  }
+
+  .how .card .card-content h3 {
+    font-size: 22px;
+  }
+
+}
